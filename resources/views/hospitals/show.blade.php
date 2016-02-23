@@ -28,6 +28,13 @@
             </tr>
             <tr>
                 <td>Wards: </td><td>
+                    <a href="{!! url('wards/create') !!}?hospital_id={!! $hospital->id !!}" class="btn btn-labeled btn-primary">
+                     <span class="btn-label">
+                      <i class="glyphicon glyphicon-plus"></i>
+                     </span>
+                        Add New Ward
+                    </a>
+                    <br /><br />
                     {!! $dataTable->table() !!}
                 </td>
             </tr>
