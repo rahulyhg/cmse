@@ -1,0 +1,7 @@
+<fieldset>
+$FIELDS$
+</fieldset>
+<!-- Submit Field -->
+<footer>
+    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
+</footer>

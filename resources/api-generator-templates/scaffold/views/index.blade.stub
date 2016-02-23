@@ -1,0 +1,42 @@
+@extends('layout.default')
+
+@section('title')
+     @parent
+@endsection
+
+@section('breadcrumb')
+    @parent
+    <li></li>
+@endsection
+
+@section('content')
+
+
+    <div class="well">
+
+        @include('flash::message')
+
+
+        <a class="btn btn-primary" href="{!! route('$MODEL_NAME_PLURAL_CAMEL$.create') !!}">Add New</a>
+
+        <hr>
+
+        @if($$MODEL_NAME_PLURAL_CAMEL$->isEmpty())
+            <div class="well text-center">No $MODEL_NAME_PLURAL$ found.</div>
+        @else
+            @include('$MODEL_NAME_PLURAL_CAMEL$.table')
+        @endif
+
+
+        $PAGINATE$
+
+    </div>
+@endsection
+
+@section('footer_scripts')
+    <script src="/js/plugin/datatables/jquery.dataTables.min.js"></script>
+    <script src="/js/plugin/datatables/dataTables.colVis.min.js"></script>
+    <script src="/js/plugin/datatables/dataTables.tableTools.min.js"></script>
+    <script src="/js/plugin/datatables/dataTables.bootstrap.min.js"></script>
+    <script src="/js/plugin/datatable-responsive/datatables.responsive.min.js"></script>
+@endsection

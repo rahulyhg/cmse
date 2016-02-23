@@ -1,0 +1,4 @@
+<!-- $FIELD_NAME_TITLE$ Field -->
+<section>
+    <label class="input">$FIELD_INPUT$</label>
+</section>
