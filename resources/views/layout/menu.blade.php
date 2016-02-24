@@ -9,9 +9,8 @@
                 <a href="javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
                     <i class="fa fa-user fa-2x"></i>
                     <span>
-                        &nbsp;&nbsp;&nbsp;{!! \Auth::user()->name !!}
+                        &nbsp;&nbsp;&nbsp;{!! \Auth::guest() ? '<a href="'.URL::to('login').'">Log In</a>' : \Auth::user()->name !!}
                     </span>
-                    <i class="fa fa-angle-down"></i>
                 </a>
 
 
