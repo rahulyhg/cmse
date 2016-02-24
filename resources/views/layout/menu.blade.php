@@ -21,12 +21,12 @@
         <!-- NAVIGATION : This navigation is also responsive-->
         <nav>
             <ul>
-                <li class="active">
+                <li>
                     <a href="{{ URL::to('/') }}" title="Dashboard"><i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">Dashboard</span></a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-lg fa-fw fa-user"></i> <span class="menu-item-parent">Users</span></a>
-                    <ul class="dropdown-menu">
+                    <ul>
 
                         <li>
                             <a href="{!! url('users') !!}">Users</a>
@@ -39,7 +39,7 @@
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-lg fa-fw fa-hospital-o "></i> <span class="menu-item-parent">Hospitals</span></a>
-                    <ul class="dropdown-menu">
+                    <ul>
 
                         <li>
                             <a href="{!! url('hospitals') !!}">Hospitals</a>
@@ -52,7 +52,7 @@
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-lg fa-fw fa-barcode "></i> <span class="menu-item-parent">Items</span></a>
-                    <ul class="dropdown-menu">
+                    <ul>
 
                         <li>
                             <a href="{!! url('items') !!}">Items</a>
@@ -74,7 +74,7 @@
 
                 <li>
                     <a href="#"><i class="fa fa-lg fa-fw fa-file-text-o"></i> <span class="menu-item-parent">Requests</span></a>
-                    <ul class="dropdown-menu">
+                    <ul>
                         <li>
                             <a href="{!! url('orders') !!}">All Request</a>
                         </li>
