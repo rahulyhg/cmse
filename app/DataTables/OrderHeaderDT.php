@@ -29,7 +29,7 @@ class OrderHeaderDT extends DataTable
                     return "Pending <a href='orders/".$data->id."/approve' class='btn btn-success btn-xs'>Approve Now</a>";
 
                 if($status == "approved")
-                    return "Approved <a href='orders/".$data->id."/delivering' class='btn btn-success btn-xs'>Deliver Now</a>";
+                    return "Approved <a href='orders/".$data->id."/deliver' class='btn btn-success btn-xs'>Deliver Now</a>";
 
                 if($status == "delivering")
                     return "Delivering";

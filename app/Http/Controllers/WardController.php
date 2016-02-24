@@ -50,8 +50,11 @@ class WardController extends Controller
 
     public function destroy($id){
 
-        Ward::destroy($id);
-
+        try{
+            Ward::destroy($id);
+        }catch(\Illuminate\Database\QueryException $e){
+            return $e->getCode();
+        }
 
     }
 

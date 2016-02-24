@@ -68,9 +68,14 @@
                     headers: {
                         'X-CSRF-TOKEN': '{!! csrf_token() !!}'
                     }
-                }).always(function (data) {
 
+                }).always(function (data,status,msg) {
                     $('#dataTableBuilder').DataTable().draw(false);
+                }).done(function(msg) {
+                    if(msg == '23000') {
+                        alert('You are not allow to delete ward that already have usage recorded.')
+                    }
+
                 });
             }
         });

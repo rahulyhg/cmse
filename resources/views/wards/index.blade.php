@@ -51,7 +51,8 @@
                     data: {method: '_DELETE'},
                     headers: {
                         'X-CSRF-TOKEN': '{!! csrf_token() !!}'
-                    }
+                    },
+
                 }).always(function (data) {
 
                     $('#dataTableBuilder').DataTable().draw(false);

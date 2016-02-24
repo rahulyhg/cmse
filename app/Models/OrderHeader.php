@@ -76,7 +76,7 @@ class OrderHeader extends Model
 
         if($this->approved_at != "0000-00-00 00:00:00" && $this->delivering_at != "0000-00-00 00:00:00" && $this->delivered_at != "0000-00-00 00:00:00"){
             //return "Delivering <a href='orders/".$data->id."/delivered' class='btn btn-primary btn-xs'>Completed</a>";
-            return "received";
+            return "delivered";
         }
 
 
