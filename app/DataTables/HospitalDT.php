@@ -22,7 +22,7 @@ class HospitalDT extends DataTable
                 return '<a href="hospitals/'.$hospitals->id.'"><button><i class="glyphicon glyphicon-eye-open"></i></button></a><a href="hospitals/'.$hospitals->id.'/edit"><button><i class="glyphicon glyphicon-edit"></i></button></a><a href="#"><button class="btn-delete" data-remote="/hospitals/'.$hospitals->id.'"><i class="glyphicon glyphicon-trash"></i></button></a>';
             })
             ->editColumn('wards_count',function($data){
-                return "<a href='hospitals/".$hospitals->id."><span class='badge bg-color-greenLight '>".$data->wards->count()."</span></a>" . " <!--a href='wards?hospital_id=".$data->id."'><button><li class='fa fa-search'></li></button></a--> <a href='wards/create?hospital_id=".$data->id."'><button><li class='fa fa-plus'></li></button></a>";
+                return "<a href='hospitals/".$data->id."'><span class='badge bg-color-greenLight '>".$data->wards->count()."</span></a>" . " <!--a href='wards?hospital_id=".$data->id."'><button><li class='fa fa-search'></li></button></a--> <a href='wards/create?hospital_id=".$data->id."'><button><li class='fa fa-plus'></li></button></a>";
             })
             ->make(true);
     }
