@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\DataTables\ItemDT;
+use App\DataTables\ItemTransactionDT;
 use App\Models\Item;
+use App\Models\ItemTransaction;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -56,10 +58,13 @@ class ItemController extends Controller
         return \Redirect::route('items.show',$item->id)->with('flash_message', 'Item successfully created! <a href="'.url('items/create').'">Add More</a>');
     }
 
-    public function show($id){
+    public function show($id, ItemTransactionDT $dataTable){
+
         $item = Item::with('onhand')->findOrFail($id);
 
-        return view('items.show',compact('item'));
+        $dataTable->setItemCode($item->item_code);
+
+        return $dataTable->render('items.show',compact('item'));
     }
 
     public function destroy($id){

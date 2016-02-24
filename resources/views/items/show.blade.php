@@ -72,7 +72,23 @@
             <a href="{!! URL::action('ItemAdjustmentController@create',['id'=>$item->id]) !!}"><button class="btn btn-danger">Adjustment</button></a>
             <a href="{!! URL::action('ItemController@edit',['id'=>$item->id]) !!}"><button class="btn btn-primary">Edit Profile</button></a>
         </div>
+
+
     </div>
+
+    <div class="well">
+        <header class="row-seperator-header">Item Transactions</header>
+        <hr>
+
+        {!! $dataTable->table() !!}
+    </div>
+@endsection
+
+@section('footer_scripts')
+    <link rel="stylesheet" href="/css/buttons.dataTables.min.css">
+    <script src="/vendor/datatables/dataTables.buttons.min.js"></script>
+    <script src="/vendor/datatables/buttons.server-side.js"></script>
+    {!! $dataTable->scripts() !!}
 @endsection
 
 
