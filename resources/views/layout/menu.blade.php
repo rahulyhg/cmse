@@ -82,6 +82,15 @@
                     </ul>
                 </li>
 
+                <li>
+                    <a href="#"><i class="fa fa-lg fa-fw fa-files-o"></i> <span class="menu-item-parent">Reports</span></a>
+                    <ul>
+                        <li>
+                            <a href="{!! url('reports/usages') !!}">Usages</a>
+                        </li>
+                    </ul>
+                </li>
+
             </ul>
         </nav>
         <span class="minifyme" data-action="minifyMenu">

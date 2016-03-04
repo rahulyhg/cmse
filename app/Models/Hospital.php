@@ -18,4 +18,8 @@ class Hospital extends Model
         else
             return false;
     }
+
+    public function scopeNotHq($query){
+        return $query->where('hospital_name','!=','HQ');
+    }
 }

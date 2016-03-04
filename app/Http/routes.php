@@ -54,6 +54,10 @@ Route::group(['middleware' => 'web'], function () {
         Route::get('orders/{id}/cancel', 'OrderController@cancel');
         Route::get('orders/{id}/reapprove', 'OrderController@reapprove');
 
+        Route::get('reports/usages','Reports\UsageController@index');
+        Route::get('reports/usages/generate', ['as'=>'reports.usages.generate', 'uses' => 'Reports\UsageController@generate']);
+
+
 
     });
 

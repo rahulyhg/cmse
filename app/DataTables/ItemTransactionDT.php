@@ -58,7 +58,7 @@ class ItemTransactionDT extends DataTable
         return $this->builder()
                     ->columns($this->getColumns())
                     ->ajax('')
-                    
+
                     ->parameters($this->getBuilderParameters());
     }
 

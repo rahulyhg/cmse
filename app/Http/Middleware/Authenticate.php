@@ -27,6 +27,11 @@ class Authenticate
             }
         }
 
+        if(!Auth::getUser()->hasRole('admin')){
+            Auth::logout();
+            return \Redirect::back()->withErrors(['userid'=>'You do not have access!']);
+        }
+
         return $next($request);
     }
 }
