@@ -12,6 +12,7 @@ class Item extends Model
 
     protected $dates = ['deleted_at'];
     protected $fillable = ['item_code','unit','name','barcode','description','cost','gst_code','created_by','updated_by','deleted_by','category_id'];
+    protected $hidden = ['cost'];
 
     public function setBarcodeAttribute($value){
 

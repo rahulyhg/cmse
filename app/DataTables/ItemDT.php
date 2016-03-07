@@ -91,7 +91,7 @@ class ItemDT extends DataTable
             'name',
             //'barcode',
             'description',
-            'cost',
+            //'cost',
             ['data'=>'category','name'=>'category','title'=>'Category','searchable'=>false,'orderable'=>false],
             ['data'=>'onhands.onhand','name'=>'onhand.onhand','title'=>'On Hand','searchable'=>false,'orderable'=>false]
         ];

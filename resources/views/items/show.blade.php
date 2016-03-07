@@ -32,12 +32,12 @@
             <tr>
                 <td>Description: </td><td>{!! $item->description !!}</td>
             </tr>
-            <tr>
+            <!--tr>
                 <td>Item Cost: </td><td>{!! $item->cost !!}</td>
             </tr>
             <tr>
                 <td>GST Code: </td><td>{!! $item->gst_code !!}</td>
-            </tr>
+            </tr-->
             <tr>
                 <td>Created At: </td><td>{!! $item->created_at !!}</td>
             </tr>

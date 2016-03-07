@@ -63,7 +63,7 @@
                 </div>
             </div>
 
-            <div class="form-group">
+            <!--div class="form-group">
                 {!! Form::label('cost','Item Cost: ',['class' => 'col-md-2 control-label']) !!}
                 <div class="col-md-10">
                     {!! Form::text('cost', null, ['class' => 'form-control']) !!}
@@ -76,7 +76,7 @@
                     {!! Form::text('gst_code', null, ['class' => 'form-control']) !!}
 
                 </div>
-            </div>
+            </div-->
 
 
         </fieldset>
