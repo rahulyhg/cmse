@@ -14,7 +14,9 @@
         "doctrine/dbal": "^2.5",
         "spatie/laravel-permission": "^1.3",
         "yajra/laravel-datatables-oracle": "dev-master",
-        "kalnoy/nestedset": "dev-master"
+        "kalnoy/nestedset": "dev-master",
+        "gloudemans/shoppingcart": "^1.3",
+        "barryvdh/laravel-debugbar": "^2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

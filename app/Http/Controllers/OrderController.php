@@ -85,7 +85,6 @@ class OrderController extends Controller
                     'transaction_type' => 'deliver',
                     'note' => '',
                     'transfer_to' => $request->ordered_from,
-                    'cost' => $item->cost,
                     'quantity' => 0-$item->quantity,
                     'created_by' => Auth::user()->id,
                     'hospital_id' => Auth::user()->hospital_id,

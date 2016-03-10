@@ -74,6 +74,17 @@
                 </li>
 
                 <li>
+                    <a href="#"><i class="fa fa-lg fa-fw fa-file-text-o "></i> <span class="menu-item-parent">Transfers</span></a>
+                    <ul>
+                        <li>
+                            <a href="{!! url('transfers') !!}">Transfers</a>
+                        </li>
+                        <li><a href="{!! url('transfers/newtransfer') !!}">New Transfer</a></li>
+
+                    </ul>
+                </li>
+
+                <li>
                     <a href="#"><i class="fa fa-lg fa-fw fa-file-text-o"></i> <span class="menu-item-parent">Requests</span></a>
                     <ul>
                         <li>
@@ -81,6 +92,8 @@
                         </li>
                     </ul>
                 </li>
+
+
 
                 <li>
                     <a href="#"><i class="fa fa-lg fa-fw fa-files-o"></i> <span class="menu-item-parent">Reports</span></a>

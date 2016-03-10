@@ -163,6 +163,8 @@ return [
         Mitul\Generator\GeneratorServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
         Yajra\Datatables\DatatablesServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
+        Gloudemans\Shoppingcart\ShoppingcartServiceProvider::class,
 
 
     ],
@@ -217,6 +219,8 @@ return [
         'Html'      => Collective\Html\HtmlFacade::class,
         'Flash'     => Laracasts\Flash\Flash::class,
         'Datatables' => Yajra\Datatables\Datatables::class,
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        'Cart' => Gloudemans\Shoppingcart\Facades\Cart::class,
 
 
 

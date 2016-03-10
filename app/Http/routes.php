@@ -58,6 +58,18 @@ Route::group(['middleware' => 'web'], function () {
         Route::get('reports/usages/generate', ['as'=>'reports.usages.generate', 'uses' => 'Reports\UsageController@generate']);
 
 
+        //TRANSFER
+        Route::get('transfers/newtransfer', 'TransferController@newtransfer');
+        Route::post('transfers/create', 'TransferController@create');
+        Route::resource('transfers','TransferController');
+
+
+        //CART
+        Route::post('cart/add','CartController@add');
+        Route::get('cart/remove/{id}',['as' => 'removeCart', 'uses' => 'CartController@remove']);
+        Route::get('cart/show', 'CartController@show');
+
+
 
     });
 
